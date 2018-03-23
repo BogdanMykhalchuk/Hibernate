@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="PersistenceTest" duration-ms="117" started-at="2018-02-16T09:59:48Z" finished-at="2018-02-16T09:59:48Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="117" started-at="2018-02-16T09:59:48Z" finished-at="2018-02-16T09:59:48Z">
+      <class name="PersistenceTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:PersistenceTest@1324409e]" name="setup" is-config="true" duration-ms="2261" started-at="2018-02-16T09:59:46Z" finished-at="2018-02-16T09:59:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="saveMessage()[pri:0, instance:PersistenceTest@1324409e]" name="saveMessage" duration-ms="70" started-at="2018-02-16T09:59:48Z" finished-at="2018-02-16T09:59:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveMessage -->
+        <test-method status="PASS" signature="testSaveRanking()[pri:0, instance:PersistenceTest@1324409e]" name="testSaveRanking" duration-ms="24" started-at="2018-02-16T09:59:48Z" finished-at="2018-02-16T09:59:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSaveRanking -->
+        <test-method status="PASS" signature="testModelCreation()[pri:0, instance:PersistenceTest@1324409e]" name="testModelCreation" duration-ms="1" started-at="2018-02-16T09:59:48Z" finished-at="2018-02-16T09:59:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testModelCreation -->
+        <test-method status="PASS" signature="testSavePerson()[pri:0, instance:PersistenceTest@1324409e]" name="testSavePerson" duration-ms="4" started-at="2018-02-16T09:59:48Z" finished-at="2018-02-16T09:59:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSavePerson -->
+        <test-method status="PASS" signature="testSaveSkill()[pri:0, instance:PersistenceTest@1324409e]" name="testSaveSkill" duration-ms="4" started-at="2018-02-16T09:59:48Z" finished-at="2018-02-16T09:59:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSaveSkill -->
+        <test-method status="PASS" signature="readMessage()[pri:0, instance:PersistenceTest@1324409e]" name="readMessage" duration-ms="5" started-at="2018-02-16T09:59:48Z" depends-on-methods="PersistenceTest.saveMessage" finished-at="2018-02-16T09:59:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readMessage -->
+      </class> <!-- PersistenceTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- PersistenceTest -->
+</testng-results>

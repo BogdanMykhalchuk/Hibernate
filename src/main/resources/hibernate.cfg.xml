@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Database connection settings -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/hibernate</property>
+        <property name="connection.username">beranked</property>
+        <property name="connection.password">beranked</property>
+        <property name="dialect">org.hibernate.dialect.MySQL57Dialect</property>
+        <property name="hibernate.id.new_generator_mappings">false</property>
+        <property name="hibernate.connection.isolation">2</property>
+        <property name="cache.use_second_level_cache">true</property>
+        <property name="hibernate.cache.use_query_cache">true</property>
+        <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory</property>
+        <property name="c3p0.timeout">10</property>
+
+        <property name="hibernate.dialect.storage_engine">innodb</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hibernate.hbm2ddl.auto">create-drop</property>
+        <!-- without below table was not created -->
+        <!--<property name="javax.persistence.schema-generation.database.action">create</property>-->
+
+
+        <mapping class="com.chapter02.hibernate.Message"/>
+        <mapping class="com.chapter03.simple.Person"/>
+        <mapping class="com.chapter03.simple.Skill"/>
+        <mapping class="com.chapter03.simple.Ranking"/>
+        <mapping class="com.chapter04.broken.Message"/>
+        <mapping class="com.chapter04.broken.Email"/>
+        <mapping class="com.chapter04.mapped.Message"/>
+        <mapping class="com.chapter04.mapped.Email"/>
+        <mapping class="com.chapter04.model.SimpleObject"/>
+        <mapping class="com.chapter04.orphan.Library"/>
+        <mapping class="com.chapter04.orphan.Book"/>
+        <mapping class="com.chapter06.compoundpk.CPKBook"/>
+        <mapping class="com.chapter06.compoundpk.EmbeddedPKBook"/>
+        <mapping class="com.chapter06.compoundpk.IdClassBook"/>
+        <mapping class="com.chapter06.compoundpk.ISBN"/>
+        <mapping class="com.chapter06.model.LifecycleThing"/>
+        <mapping class="com.chapter06.model.Thing"/>
+        <mapping class="com.chapter06.naturalid.SimpleNaturalIdEmployee"/>
+        <mapping class="com.chapter06.naturalid.Employee"/>
+        <mapping class="com.chapter06.twotable.Customer"/>
+        <mapping class="com.chapter08.model.Supplier"/>
+        <mapping class="com.chapter10.model.Supplier"/>
+        <mapping class="com.chapter10.model.Product"/>
+        <mapping class="com.chapter10.model.Software"/>
+        <mapping class="com.chapter11.User"/>
+        <mapping class="com.chapter12.User"/>
+
+
+    </session-factory>
+</hibernate-configuration>
