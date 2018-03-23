@@ -11,8 +11,10 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import java.util.List;
 
 @Entity(name = "Post")
 @Table(name = "posts")
@@ -25,4 +27,8 @@ public class Post {
     private Long id;
 
     private String title;
+
+    @OneToMany(cascade = {CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH, CascadeType.DETACH})
+    @JoinColumn(name = "post_id")
+    private List<PostDetails> postDetails;
 }

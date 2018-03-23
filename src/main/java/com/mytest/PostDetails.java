@@ -29,7 +29,7 @@ public class PostDetails {
     @Column(name = "created_by")
     private String createdBy;
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "post_id", referencedColumnName = "id")
     private Post post;
 }
